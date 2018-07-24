@@ -1,0 +1,6 @@
+<!--pages/welfare/welfare.wxml-->
+<view>
+	<view wx:for = "{{result}}" wx:key="_id" style="border:1px solid #ececec;margin:8px; ">
+   	<image style="width: 100%; height: 450px; background-color: #eeeeee;" src="{{item.url}}"></image> 
+	</view>
+</view>

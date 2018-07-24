@@ -1,0 +1,19 @@
+<!--pages/ios.wxml-->
+<view>
+	<view wx:for = "{{result}}" wx:key="_id" style="border:1px solid #ececec;margin:0px 8px 8px; ">
+  	<i class="fa fa-flag-o" aria-hidden="true"></i><text style="font-size:14px;">{{item.desc}}</text>
+  	<view>
+  		<view style="display:inline-block;padding:5px;" wx:for="{{item.images}}">
+   		<image style="width: 60px; height: 110px; background-color: #eeeeee;" src="{{item}}"></image> 
+    	</view>  
+  	</view>
+  	<text style="font-size:12px;">{{item.createdAt}}</text>
+	</view>
+ 	<view style="text-align:center;" wx:if="{{error}}">
+  	<text >今日无数据</text>
+  </view>
+</view>
+
+
+ 
+
